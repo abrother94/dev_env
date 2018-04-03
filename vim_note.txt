@@ -1,0 +1,23 @@
+sudo apt-get install exuberant-ctags
+sudo apt-get install cscope
+
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+
+git clone https://github.com/vim/vim.git
+cd vim/src
+./configure --enable-pythoninterp=yes --enable-python3interp=yes --prefix=$HOME/opt/vim
+make && make install
+mkdir -p $HOME/bin
+cd $HOME/bin
+ln -s  /home/nick_huang/opt/vim/bin/vim $HOME/bin/vim
+vim --version
+cd ~/.vim/bundle/YouCompleteMe/
+
+#Uing in RP3 
+#YCM_CORES=1 ./install.py --clang-completer
+
+python install.py --clang-completer
+
+vim
+:PluginInstall
