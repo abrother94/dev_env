@@ -83,14 +83,8 @@ get_python_inc(),
 './benchmarks/benchmark/include',
 '-isystem',
 '/usr/include/c++/4.9/4.9.2',
-'-isystem',
-rsdinclude.get_rsd_include(),
-'-isystem',
-rsdinclude.get_rsd_include2(),
-'-isystem',
-rsdinclude.get_rsd_include1()
-#'-isystem','/home/nick_huang/Intel_RSD/intelRSD-master-2.1.3/PSME/common/agent-framework/include'
 ]
+
 
 # Clang automatically sets the '-std=' flag to 'c++14' for MSVC 2015 or later,
 # which is required for compiling the standard library, and to 'c++11' for older
@@ -98,7 +92,11 @@ rsdinclude.get_rsd_include1()
 if platform.system() != 'Windows':
   flags.append( '-std=c++11' )
 
+X=rsdinclude.get_rsd_include()
 
+print(len(X))
+for st in X:
+    flags.append( st) 
 # Set this to the absolute path to the folder (NOT the file!) containing the
 # compile_commands.json file to use that instead of 'flags'. See here for
 # more details: http://clang.llvm.org/docs/JSONCompilationDatabase.html
