@@ -1,8 +1,8 @@
 #!/usr/bin/python
-import RSD_PY 
-from RSD_PY import rsdinclude 
+import INCLUDE_PY
+from INCLUDE_PY import rsdinclude
 
-#sys.path.insert(0, "~/RSD_PY/")
+#sys.path.insert(0, "~/INCLUDE_PY/")
 
 def main():
     S=rsdinclude.get_rsd_include()

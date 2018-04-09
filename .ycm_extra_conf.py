@@ -35,7 +35,7 @@ import ycm_core
 
 #Nick Add For RSD include #
 import sys
-sys.path.append('/home/nick_huang/RSD_PY/')
+sys.path.append('/home/nick_huang/INCLUDE_PY/')
 import rsdinclude
 
 # These are the compilation flags that will be used in case there's no
