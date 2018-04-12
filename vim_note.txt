@@ -1,3 +1,4 @@
+sudo apt-get install libncurses5-dev libncursesw5-dev
 sudo apt-get install exuberant-ctags
 sudo apt-get install cscope
 
@@ -10,7 +11,7 @@ cd vim/src
 make && make install
 mkdir -p $HOME/bin
 cd $HOME/bin
-ln -s  /home/nick_huang/opt/vim/bin/vim $HOME/bin/vim
+ln -s  /$HOME/opt/vim/bin/vim $HOME/bin/vim
 vim --version
 cd ~/.vim/bundle/YouCompleteMe/
 
