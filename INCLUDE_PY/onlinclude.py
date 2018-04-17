@@ -1,6 +1,6 @@
 import os
 
-MP="/home/nick_huang/Intel_RSD_Test/ORG_B/2.1.3/rsd/PSME/"
+MP="/home/nick_huang/Study_ONL/OpenNetworkLinux/packages/base/amd64/kernels/kernel-3.16-lts-x86-64-all/builds/linux-3.16.53"
 pinclude=[]
 for subdir, dirs, files in os.walk(MP):
     for dir in dirs:
