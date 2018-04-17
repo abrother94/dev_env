@@ -37,6 +37,7 @@ import ycm_core
 import sys
 sys.path.append('/home/nick_huang/INCLUDE_PY/')
 import rsdinclude
+import onlinclude
 
 # These are the compilation flags that will be used in case there's no
 # compilation database set (by default, one is not set).
@@ -92,11 +93,16 @@ get_python_inc(),
 if platform.system() != 'Windows':
   flags.append( '-std=c++11' )
 
-X=rsdinclude.get_rsd_include()
+X=rsdinclude.get_include()
 
-print(len(X))
 for st in X:
     flags.append( st) 
+
+Y=onlinclude.get_include()
+
+for st in Y:
+    flags.append( st) 
+
 # Set this to the absolute path to the folder (NOT the file!) containing the
 # compile_commands.json file to use that instead of 'flags'. See here for
 # more details: http://clang.llvm.org/docs/JSONCompilationDatabase.html
