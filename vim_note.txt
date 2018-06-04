@@ -1,6 +1,7 @@
 sudo apt-get install libncurses5-dev libncursesw5-dev
 sudo apt-get install exuberant-ctags
 sudo apt-get install cscope
+sudo apt-get install cmake
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -12,13 +13,18 @@ make && make install
 mkdir -p $HOME/bin
 cd $HOME/bin
 ln -s  /$HOME/opt/vim/bin/vim $HOME/bin/vim
+
 vim --version
+python install.py --clang-completer
+
+cp .vimrc ~/
+
+vim
+:PluginInstall
+
 cd ~/.vim/bundle/YouCompleteMe/
 
 #Uing in RP3 
 #YCM_CORES=1 ./install.py --clang-completer
 
-python install.py --clang-completer
 
-vim
-:PluginInstall

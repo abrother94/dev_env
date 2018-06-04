@@ -30,7 +30,7 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
 
 "power line
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 "auto-completion stuff
 "Plugin 'klen/python-mode'
@@ -175,16 +175,16 @@ set ut=100
 
 "set cursorline
 
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 set laststatus=2
 
 
-:inoremap ( ()<Esc>i
-:inoremap { {}<Esc>i
-:inoremap " ""<Esc>i
-:inoremap ' ''<Esc>i
-:inoremap [ []<Esc>i
-:inoremap {<CR> {<CR>}<Esc>ko
+":inoremap ( ()<Esc>i
+":inoremap { {}<Esc>i
+":inoremap " ""<Esc>i
+":inoremap ' ''<Esc>i
+":inoremap [ []<Esc>i
+":inoremap {<CR> {<CR>}<Esc>ko
 :set ruler
 :set ai
 
