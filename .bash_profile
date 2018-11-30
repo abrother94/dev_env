@@ -32,6 +32,8 @@ alias opd='popd'
 alias CO='chown -R abrother:abrother'
 alias BE='tar -vcf env.tar $BACKUP_LIST'
 alias SYNC='rsync -av -e ssh $name@$ip:srcdirfile/ ./'
+#In kernel dir
+alias updatek=`make tags ARCH=arm;make cscope ARCH=arm`
 
 # User specific environment and startup programs
 export PATH
