@@ -1,5 +1,11 @@
 " Original Nick's setting Begin
 nnoremap <F2> :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
+inoremap <F4> <C-R>=system("~/dev_env/fun.sh")<CR>
+inoremap <F5> <C-R>=system("~/dev_env/com.sh")<CR>
+inoremap <F3> <C-R>="#if 1\r\n#endif"<CR>
+nmap <F7> :TrinityToggleAll
+nmap <F8> :TlistToggle<CR><CR>
+
 
 set tags=./tags,./TAGS,tags;~,TAGS;~
 "vundle
@@ -159,9 +165,6 @@ nmap zi :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap zd :cs find d <C-R>=expand("<cword>")<CR><CR>
 
 
-nmap <F7> :TrinityToggleAll
-nmap <F8> :TlistToggle<CR><CR>
-
 let g:SrcExpl_pluginList = [
         \ "__Tag_List__",
         \ "_NERD_tree_",
@@ -187,6 +190,7 @@ set laststatus=2
 ":inoremap {<CR> {<CR>}<Esc>ko
 :set ruler
 :set ai
+
 
 syntax on
 :highlight Comment ctermfg=lightblue

@@ -15,4 +15,6 @@ python install.py --clang-completer
 #Uing in RP3 
 #YCM_CORES=1 ./install.py --clang-completer
 
-
+cp ycm_extra_conf.py-C ~/.ycm_extra_conf.py
+or 
+cp ycm_extra_conf.py-C++ ~/.ycm_extra_conf.py
