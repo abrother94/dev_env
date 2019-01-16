@@ -34,6 +34,7 @@ alias BE='tar -vcf env.tar $BACKUP_LIST'
 alias SYNC='rsync -av -e ssh $name@$ip:srcdirfile/ ./'
 #In kernel dir
 alias updatek='make tags ARCH=arm;make cscope ARCH=arm'
+alias ls='ls --color=always'
 
 # User specific environment and startup programs
 export PATH
